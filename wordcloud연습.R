@@ -1,0 +1,11 @@
+setwd('c:\\easy_r')
+install.packages('KoNLP')
+install.packages('wordcloud')
+library(KoNLP)
+library(wordcloud)
+useSejongDic()
+useSejongDic()
+mergeUserDic(data.frame('서진수','ncn'))
+data1 <- readLines("seoul_new.txt")
+mergeUserDic(data.frame('서진수','ncn'))
+data1

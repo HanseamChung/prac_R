@@ -1,0 +1,5 @@
+setwd('c:\\easy_r')
+library(KoNLP)
+library(wordcloud)
+library(stringr)
+useSejongDic()
