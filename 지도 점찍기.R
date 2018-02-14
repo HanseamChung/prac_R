@@ -1,6 +1,6 @@
 setwd('c:\\easy_r')
-install.packages('ggmap')
-imstall.packages('stringr')
+#install.packages('ggmap')
+#install.packages('stringr')
 library(ggmap)
 library(stringr)
 
@@ -22,4 +22,5 @@ for (i in 1:length(loc2)){
     colors <- c(colors,'blue')}
 }
 kd <- get_map('Amsa-dong',zoom=13,maptype='roadmap')
-kor.map<-ggmap(kd)+geom_point(data=loc,aes(x= LON, y = LAT+0.001,label=주차장명),size=1)
+kor.map+geom_text(data=loc, aes(x= LON, y = LAT+0.001,label=주차장명),size=1)
+ggsave('c:\\easy_r/kd.png',dpi=500)
